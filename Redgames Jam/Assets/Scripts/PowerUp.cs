@@ -25,24 +25,24 @@ public class PowerUp : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        switch(PowerType)
+        if (collision.CompareTag("Player"))
         {
-            case PowerType.Kebab:
-                if (StartCoroutine(kebab()) != null)
-                {
-                    StopCoroutine(StartCoroutine(kebab())); // Stop the existing coroutine if it's running
-                }
-                StartCoroutine(kebab());
-                break;
+            switch (PowerType)
+            {
+                case PowerType.Kebab:
+                        Debug.Log("ONCE");
+                        StartCoroutine(kebab());
+                    break;
 
-            case PowerType.NasiLemak:
-                break;
+                case PowerType.NasiLemak:
+                    break;
 
-            case PowerType.IceCream:
-                break;
+                case PowerType.IceCream:
+                    break;
 
-            default:
-                break;
+                default:
+                    break;
+            }
         }
     }
 
