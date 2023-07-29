@@ -22,8 +22,12 @@ public class Player : MonoBehaviour
     public float Downforce = 0.5f; //When player falls
     public float propel = 1f; //moves the player forward
 
-    [Header("Other")]
+    [Header("Animation")]
     public Animator animator;
+    private Quaternion targetRotation = Quaternion.identity;
+    public float rotation = -20f;
+    public float rotationSpeed = 2f; //Slower = smoother transition
+
     private Rigidbody2D rb;
     private BoxCollider2D bc;
 
@@ -59,14 +63,18 @@ public class Player : MonoBehaviour
 
         if (isJumping)
         {
-            rb.AddForce(new Vector2(propel, jumpForce * (rb.mass * Upforce)), ForceMode2D.Force); 
+            rb.AddForce(new Vector2(propel, jumpForce * (rb.mass * Upforce)), ForceMode2D.Force);
+            targetRotation = Quaternion.Euler(0f, 0f, rotation);
         }
         else
         {
             
             rb.AddForce(new Vector2(0f, -jumpForce * gravityMultiplier * (rb.mass * Downforce)), ForceMode2D.Force);
+            targetRotation = Quaternion.identity;
         }
-        
+
+        transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed * Time.fixedDeltaTime);
+
     }
 
     private void StartJump()
@@ -77,7 +85,7 @@ public class Player : MonoBehaviour
 
     private void EndJump()
     {
-        animator.Play("Default");
+        animator.Play("Default", 0, 0.0f); //Smoothly transition into default animation
         isJumping = false;
     }
 }
