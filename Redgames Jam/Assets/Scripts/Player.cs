@@ -22,6 +22,8 @@ public class Player : MonoBehaviour
     public float Downforce = 0.5f; //When player falls
     public float propel = 1f; //moves the player forward
 
+    [Header("Other")]
+    public Animator animator;
     private Rigidbody2D rb;
     private BoxCollider2D bc;
 
@@ -61,6 +63,7 @@ public class Player : MonoBehaviour
         }
         else
         {
+            
             rb.AddForce(new Vector2(0f, -jumpForce * gravityMultiplier * (rb.mass * Downforce)), ForceMode2D.Force);
         }
         
@@ -68,11 +71,13 @@ public class Player : MonoBehaviour
 
     private void StartJump()
     {
+        animator.Play("Fly");
         isJumping = true;
     }
 
     private void EndJump()
     {
+        animator.Play("Default");
         isJumping = false;
     }
 }
