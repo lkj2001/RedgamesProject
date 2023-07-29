@@ -15,6 +15,7 @@ public class PowerUp : MonoBehaviour
     private SpriteRenderer s;
     private CircleCollider2D c;
     private PowerupManager powerUpManager;
+    //public CoinManager CM;
 
     [Header("PowerUp Type")]
     public PowerType PowerType;
@@ -51,6 +52,7 @@ public class PowerUp : MonoBehaviour
                     {
                         Debug.Log("MALAYSIA BEST FOOD");
                         powerUpManager.SetPowerUpActive(PowerType.NasiLemak, true);
+                        StartCoroutine(NasiLemak());
                     }
                     else
                     {
@@ -97,5 +99,17 @@ public class PowerUp : MonoBehaviour
         player.isShielded = true;
         s.enabled = false;
         c.enabled = false;
+    }
+
+    private IEnumerator NasiLemak()
+    {
+        CoinManager.Instance.DoublePoint = true;
+        s.enabled = false;
+        c.enabled = false;
+        yield return new WaitForSeconds(7);
+        CoinManager.Instance.DoublePoint = false;
+        Debug.Log("NO MORE NASI");
+        powerUpManager.SetPowerUpActive(PowerType.NasiLemak, false);
+        Destroy(gameObject);
     }
 }

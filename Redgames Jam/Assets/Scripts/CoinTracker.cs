@@ -7,12 +7,12 @@ public class CoinTracker : MonoBehaviour
 {
     public TextMeshProUGUI currentScore, highScore, points;
 
-    public Coins coin;
+    //public CoinManager CM;
 
     public void Update()
     {
-        currentScore.text = coin.currentScore.ToString();
-        highScore.text = coin.highScore.ToString();
-        points.text = coin.points.ToString();
+        currentScore.text = CoinManager.Instance.currentScore.ToString();
+        highScore.text = CoinManager.Instance.highScore.ToString();
+        points.text = CoinManager.Instance.points.ToString();
     }
 }

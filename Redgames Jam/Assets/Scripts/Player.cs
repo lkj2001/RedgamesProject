@@ -112,7 +112,7 @@ public class Player : MonoBehaviour
     {
         isGrounded = false;
         isJumping = false;
-        Debug.Log("END");
+        //Debug.Log("END");
         animator.Play("Default", 0, 0.0f); //Smoothly transition into default animation
         
     }
