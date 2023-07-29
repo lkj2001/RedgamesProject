@@ -5,9 +5,11 @@ using UnityEngine;
 public class CoinManager : MonoBehaviour
 {
     public int points;
-    public int currentScore;
-    public int highScore;
+    public float currentScore;
+    public float highScore;
     public bool DoublePoint;
+    private float timeSinceLastUpdate = 0f;
+    //private const float scoreIncreaseInterval = 1f;
 
     public static CoinManager Instance { get; private set; }
 
@@ -16,11 +18,32 @@ public class CoinManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // Optional: To persist the CoinManager across scenes
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
             Destroy(gameObject);
+        }
+    }
+
+    public void Update()
+    {
+
+        //This allows the score to update by 10 every second (change the 1f if you want it to go faster/slower)
+        timeSinceLastUpdate += Time.deltaTime;
+
+        if (timeSinceLastUpdate >= 1f)
+        {
+            int intervalsPassed = Mathf.FloorToInt(timeSinceLastUpdate / 1f);
+
+            currentScore += intervalsPassed * 10;
+
+            timeSinceLastUpdate -= intervalsPassed * 1f;
+
+            if (currentScore >= highScore)
+            {
+                highScore = currentScore;
+            }
         }
     }
 }

@@ -10,12 +10,12 @@ public class Coins : MonoBehaviour
         {
             if (CoinManager.Instance.DoublePoint)
             {
-                CoinManager.Instance.currentScore += 20;
+                CoinManager.Instance.currentScore += 200;
                 CoinManager.Instance.points += 1;
             }
             else
             {
-                CoinManager.Instance.currentScore += 10;
+                CoinManager.Instance.currentScore += 100;
                 CoinManager.Instance.points += 1;
             }
 
