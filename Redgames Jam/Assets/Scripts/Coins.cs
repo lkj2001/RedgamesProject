@@ -1,18 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Coins : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int points;
+    public int currentScore;
+    public int highScore;
 
-    // Update is called once per frame
-    void Update()
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.CompareTag("Player"))
+        {
+            currentScore += 10;
+            points += 1;
+
+            if (currentScore >= highScore) //Update highscore
+            {
+                highScore = currentScore;
+            }
+
+            Debug.Log("Coin collected");
+            Debug.Log("Current Score: " + currentScore);
+            Debug.Log("High Score: " + highScore);
+
+            Destroy(gameObject);
+        }
     }
 }
