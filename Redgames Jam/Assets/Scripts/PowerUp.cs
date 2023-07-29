@@ -35,12 +35,13 @@ public class PowerUp : MonoBehaviour
                 case PowerType.Kebab:
                     if (!powerUpManager.IsPowerUpActive(PowerType.Kebab))
                     {
-                        Debug.Log("ACTIVATE");
+                        Debug.Log("KEBAB POWER");
                         powerUpManager.SetPowerUpActive(PowerType.Kebab, true);
                         StartCoroutine(kebab());
                     }
                     else
                     {
+                        Debug.Log("Already applied");
                         Destroy(gameObject);
                     }
                     break;
@@ -49,6 +50,17 @@ public class PowerUp : MonoBehaviour
                     break;
 
                 case PowerType.IceCream:
+                    if(!powerUpManager.IsPowerUpActive(PowerType.IceCream))
+                    {
+                        Debug.Log("BING CHILLING");
+                        powerUpManager.SetPowerUpActive(PowerType.IceCream, true);
+                        IceCream();
+                    }
+                    else
+                    {
+                        Debug.Log("Already applied");
+                        Destroy(gameObject);
+                    }
                     break;
 
                 default:
@@ -68,5 +80,12 @@ public class PowerUp : MonoBehaviour
         player.speed /= 2;
         powerUpManager.SetPowerUpActive(PowerType.Kebab, false);
         Destroy(gameObject);
+    }
+
+    private void IceCream()
+    {
+        player.isShielded = true;
+        s.enabled = false;
+        c.enabled = false;
     }
 }

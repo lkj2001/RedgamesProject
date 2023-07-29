@@ -28,13 +28,19 @@ public class Player : MonoBehaviour
     public float rotation = -20f;
     public float rotationSpeed = 2f; //Slower = smoother transition
 
+    [Header("Other stuff")]
     private Rigidbody2D rb;
     private BoxCollider2D bc;
+    private PowerupManager powerUpManager;
+    public bool isShielded;
+    public GameObject shield;
+    public PowerUp powerUp;
 
     public void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         bc = GetComponent<BoxCollider2D>();
+        powerUpManager = FindObjectOfType<PowerupManager>();
     }
 
     public void Update()
@@ -47,9 +53,21 @@ public class Player : MonoBehaviour
         {
             bc.isTrigger = false;
         }
-        // Handle horizontal movement
-        //float horizontalInput = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(/*horizontalInput **/ speed, rb.velocity.y);
+
+        if(isShielded)
+        {
+            shield.SetActive(true);
+            Invoke("stopIceCream", 10f);
+        }
+        else
+        {
+            shield.SetActive(false);
+            powerUpManager.SetPowerUpActive(PowerType.IceCream, false);
+            CancelInvoke("stopIceCream");
+        }
+
+        //Moving forward
+        rb.velocity = new Vector2(speed, rb.velocity.y);
 
         // Check for jump input
         if (Input.GetMouseButtonDown(0))
@@ -87,5 +105,13 @@ public class Player : MonoBehaviour
     {
         animator.Play("Default", 0, 0.0f); //Smoothly transition into default animation
         isJumping = false;
+    }
+
+    public void stopIceCream()
+    {
+        Debug.Log("Shield Destroyed");
+        powerUpManager.SetPowerUpActive(PowerType.IceCream, false);
+        isShielded = false;
+        CancelInvoke("stopIceCream");
     }
 }
