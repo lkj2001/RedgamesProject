@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
     private PowerupManager powerUpManager;
     public bool isShielded;
     public GameObject shield;
-    public PowerUp powerUp;
+    //public PowerUp powerUp;
 
     public void Start()
     {
