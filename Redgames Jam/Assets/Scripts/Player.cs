@@ -114,4 +114,9 @@ public class Player : MonoBehaviour
         isShielded = false;
         CancelInvoke("stopIceCream");
     }
+
+    public Vector3 GetPosition()
+    {
+        return transform.position;
+    }
 }
