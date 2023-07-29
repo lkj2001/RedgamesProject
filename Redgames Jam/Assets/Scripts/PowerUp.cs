@@ -17,6 +17,12 @@ public class PowerUp : MonoBehaviour
     private PowerupManager powerUpManager;
     //public CoinManager CM;
 
+    [Header("Sprite")]
+    public Sprite kebabSprite;
+    public Sprite nasiLemakSprite;
+    public Sprite iceCreamSprite;
+    private SpriteRenderer spriteRenderer;
+
     [Header("PowerUp Type")]
     public PowerType PowerType;
 
@@ -25,6 +31,23 @@ public class PowerUp : MonoBehaviour
         s = GetComponent<SpriteRenderer>();
         c = GetComponent<CircleCollider2D>();
         powerUpManager = FindObjectOfType<PowerupManager>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
+    public void Update()
+    {
+        switch(PowerType)
+        {
+            case PowerType.Kebab:
+                spriteRenderer.sprite = kebabSprite; 
+                break;
+            case PowerType.NasiLemak:
+                spriteRenderer.sprite= nasiLemakSprite;
+                break;
+            case PowerType.IceCream:
+                spriteRenderer.sprite= iceCreamSprite;
+                break;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

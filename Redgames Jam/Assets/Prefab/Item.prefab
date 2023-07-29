@@ -98,8 +98,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44f3e96fae6e54a42a6482813779ac36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  DoublePoint: 0
+  player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
+  kebabSprite: {fileID: 21300000, guid: 3c8db6178ca22f14c87d57d3443e8874, type: 3}
+  nasiLemakSprite: {fileID: 21300000, guid: 9aa73a0235684f14fa13da321172cfb7, type: 3}
+  iceCreamSprite: {fileID: 21300000, guid: 2a0daaf77b6571c4d8325c4799089c56, type: 3}
   PowerType: 1
 --- !u!58 &4132549165996133064
 CircleCollider2D:
