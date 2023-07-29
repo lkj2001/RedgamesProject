@@ -47,6 +47,16 @@ public class PowerUp : MonoBehaviour
                     break;
 
                 case PowerType.NasiLemak:
+                    if(!powerUpManager.IsPowerUpActive(PowerType.NasiLemak))
+                    {
+                        Debug.Log("MALAYSIA BEST FOOD");
+                        powerUpManager.SetPowerUpActive(PowerType.NasiLemak, true);
+                    }
+                    else
+                    {
+                        Debug.Log("Already applied");
+                        Destroy(gameObject);
+                    }
                     break;
 
                 case PowerType.IceCream:

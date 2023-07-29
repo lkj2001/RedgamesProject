@@ -17,10 +17,11 @@ public class Player : MonoBehaviour
     public float speed = 1; //best to edit in editor
     public float jumpForce = 10f; //When player goes up
     public float gravityMultiplier = 2f; //When player falls
-    private bool isJumping = false;
     public float Upforce = 1f; //When player goes up
     public float Downforce = 0.5f; //When player falls
     public float propel = 1f; //moves the player forward
+    public bool isJumping;
+    public bool isGrounded;
 
     [Header("Animation")]
     public Animator animator;
@@ -79,12 +80,12 @@ public class Player : MonoBehaviour
             EndJump();
         }
 
-        if (isJumping)
+        if (isJumping && !isGrounded)
         {
             rb.AddForce(new Vector2(propel, jumpForce * (rb.mass * Upforce)), ForceMode2D.Force);
             targetRotation = Quaternion.Euler(0f, 0f, rotation);
         }
-        else
+        else if (!isJumping && !isGrounded)
         {
             
             rb.AddForce(new Vector2(0f, -jumpForce * gravityMultiplier * (rb.mass * Downforce)), ForceMode2D.Force);
@@ -93,18 +94,35 @@ public class Player : MonoBehaviour
 
         transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed * Time.fixedDeltaTime);
 
+        if (isGrounded)
+        {
+            animator.Play("Start");
+        }
     }
 
     private void StartJump()
     {
-        animator.Play("Fly");
+        isGrounded = false;
         isJumping = true;
+        animator.Play("Fly");
+        
     }
 
     private void EndJump()
     {
-        animator.Play("Default", 0, 0.0f); //Smoothly transition into default animation
+        isGrounded = false;
         isJumping = false;
+        Debug.Log("END");
+        animator.Play("Default", 0, 0.0f); //Smoothly transition into default animation
+        
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;
+        }
     }
 
     public void stopIceCream()
