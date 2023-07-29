@@ -200,11 +200,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelPart_Start: {fileID: 841975723}
   levelPartList:
-  - {fileID: 8935333938186335976, guid: f3331dc9a646a124b9760e5e1c481a0b, type: 3}
-  - {fileID: 1679753806602859017, guid: 303a06b54a15b5b4eb1b7ef9f0b70fa4, type: 3}
-  - {fileID: 2704668432922106404, guid: 5cb66a68a8111204dbb400a6cffd5959, type: 3}
-  - {fileID: 1780804877300875473, guid: 69b6d4b65a2fc964e940b7bfd592aa25, type: 3}
-  - {fileID: 573401626599784895, guid: 5d29e4b7d3b73bd4cb8922bf896ae341, type: 3}
+  - {fileID: 5534754883647600457, guid: 3b100fa248efb1e46bc42a548246438a, type: 3}
+  - {fileID: 1963389855833847668, guid: 1a9904171f74b2d48b0c8282c47a7a0a, type: 3}
+  - {fileID: 6581438186193485576, guid: 14bd0a026f0274a4cb8a325e8fa3db04, type: 3}
   player: {fileID: 744616768}
 --- !u!114 &744616768 stripped
 MonoBehaviour:
@@ -234,7 +232,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &841975721
 BoxCollider2D:
   m_ObjectHideFlags: 0
