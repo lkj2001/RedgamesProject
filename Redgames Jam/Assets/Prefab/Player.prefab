@@ -5022,9 +5022,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   State: 0
   speed: 2
-  jumpForce: 2
+  jumpForce: 4
   gravityMultiplier: 0.1
-  Upforce: 1
+  Upforce: 2
   Downforce: 0.5
   propel: 3
   isJumping: 0

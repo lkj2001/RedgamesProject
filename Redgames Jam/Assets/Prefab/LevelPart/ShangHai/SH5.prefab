@@ -456,7 +456,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.000000059604645, y: 0.37845442}
@@ -485,7 +485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
-  shield: {fileID: 0}
+  shield: {fileID: 2134678290406167980, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
 --- !u!1 &7626187148346805733
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,7 +582,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0044729114, y: 0.41769454}
@@ -611,7 +611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
-  shield: {fileID: 0}
+  shield: {fileID: 2134678290406167980, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
 --- !u!1 &8763791154461340045
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,7 +708,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.08202672, y: 0.08080411}
@@ -737,7 +737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
-  shield: {fileID: 0}
+  shield: {fileID: 2134678290406167980, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
 --- !u!1001 &158464264404984434
 PrefabInstance:
   m_ObjectHideFlags: 0

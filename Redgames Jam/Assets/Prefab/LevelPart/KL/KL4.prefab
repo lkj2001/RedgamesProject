@@ -163,6 +163,7 @@ GameObject:
   - component: {fileID: 1780804877373441650}
   - component: {fileID: 1780804877373441653}
   - component: {fileID: 1780804877373441652}
+  - component: {fileID: 5752697942696630247}
   m_Layer: 0
   m_Name: Square (1)
   m_TagString: Obstacles
@@ -247,7 +248,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.3950262}
@@ -263,6 +264,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.9546461}
   m_EdgeRadius: 0
+--- !u!114 &5752697942696630247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780804877373441655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08852133cc2fda498a1eb283dbc615b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
+  shield: {fileID: 2134678290406167980, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
 --- !u!1 &1780804877859015813
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,6 +430,7 @@ GameObject:
   - component: {fileID: 7706451220884439338}
   - component: {fileID: 7706451220884439336}
   - component: {fileID: 7706451220884439339}
+  - component: {fileID: 3993344361307621590}
   m_Layer: 0
   m_Name: Square (6)
   m_TagString: Obstacles
@@ -499,7 +515,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.008056253, y: 0.23535958}
@@ -515,6 +531,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8549829, y: 2.235638}
   m_EdgeRadius: 0
+--- !u!114 &3993344361307621590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7706451220884439349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08852133cc2fda498a1eb283dbc615b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
+  shield: {fileID: 2134678290406167980, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
 --- !u!1 &7706451221224818624
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,6 +556,7 @@ GameObject:
   - component: {fileID: 7706451221224818625}
   - component: {fileID: 7706451221224818631}
   - component: {fileID: 7706451221224818630}
+  - component: {fileID: 3930229242162304226}
   m_Layer: 0
   m_Name: Square (2)
   m_TagString: Obstacles
@@ -610,7 +641,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.23771307}
@@ -626,6 +657,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.247344, y: 2.0759642}
   m_EdgeRadius: 0
+--- !u!114 &3930229242162304226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7706451221224818624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08852133cc2fda498a1eb283dbc615b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
+  shield: {fileID: 2134678290406167980, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
 --- !u!1 &7706451222281133302
 GameObject:
   m_ObjectHideFlags: 0
@@ -637,6 +682,7 @@ GameObject:
   - component: {fileID: 7706451222281133303}
   - component: {fileID: 7706451222281133301}
   - component: {fileID: 7706451222281133300}
+  - component: {fileID: 8756145845719177047}
   m_Layer: 0
   m_Name: Square (5)
   m_TagString: Obstacles
@@ -721,7 +767,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.008056641, y: 0.14876854}
@@ -737,6 +783,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2416964, y: 2.261967}
   m_EdgeRadius: 0
+--- !u!114 &8756145845719177047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7706451222281133302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08852133cc2fda498a1eb283dbc615b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
+  shield: {fileID: 2134678290406167980, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
 --- !u!1 &7706451222319859201
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,6 +808,7 @@ GameObject:
   - component: {fileID: 7706451222319859206}
   - component: {fileID: 7706451222319859204}
   - component: {fileID: 7706451222319859207}
+  - component: {fileID: 5357689690327274080}
   m_Layer: 0
   m_Name: Square (3)
   m_TagString: Obstacles
@@ -832,7 +893,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.017667472, y: 0.18734002}
@@ -848,6 +909,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1413394, y: 2.358214}
   m_EdgeRadius: 0
+--- !u!114 &5357689690327274080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7706451222319859201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08852133cc2fda498a1eb283dbc615b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
+  shield: {fileID: 2134678290406167980, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
 --- !u!1001 &563699275399818497
 PrefabInstance:
   m_ObjectHideFlags: 0

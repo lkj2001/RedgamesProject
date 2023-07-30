@@ -1521,6 +1521,10 @@ PrefabInstance:
       value: 0.15730897
       objectReference: {fileID: 0}
     - target: {fileID: 404914242148247310, guid: cd22700fb35378848b1e3b0106c1a972, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 404914242148247310, guid: cd22700fb35378848b1e3b0106c1a972, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 0.83
       objectReference: {fileID: 0}
@@ -2053,6 +2057,10 @@ PrefabInstance:
       value: 0.08103788
       objectReference: {fileID: 0}
     - target: {fileID: 404914242148247310, guid: cd22700fb35378848b1e3b0106c1a972, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 404914242148247310, guid: cd22700fb35378848b1e3b0106c1a972, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 0.83
       objectReference: {fileID: 0}
@@ -2444,6 +2452,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3688201328732847578}
     m_Modifications:
+    - target: {fileID: 404914242148247310, guid: cd22700fb35378848b1e3b0106c1a972, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 404914242148247310, guid: cd22700fb35378848b1e3b0106c1a972, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 0.83
@@ -3033,6 +3045,10 @@ PrefabInstance:
     - target: {fileID: 404914242148247310, guid: cd22700fb35378848b1e3b0106c1a972, type: 3}
       propertyPath: m_Offset.y
       value: 0.05005285
+      objectReference: {fileID: 0}
+    - target: {fileID: 404914242148247310, guid: cd22700fb35378848b1e3b0106c1a972, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 404914242148247310, guid: cd22700fb35378848b1e3b0106c1a972, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
