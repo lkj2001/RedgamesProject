@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Obstacles : MonoBehaviour
 {
@@ -29,6 +30,7 @@ public class Obstacles : MonoBehaviour
                 Destroy(collision.gameObject);
                 //Destroy(gameObject);
                 StartCoroutine(Enemysprite());
+                StartCoroutine(GameOver());
             }
 
         }
@@ -44,13 +46,11 @@ public class Obstacles : MonoBehaviour
 
     }
 
-    public IEnumerator shieldSprite()
+    public IEnumerator GameOver()
     {
-        sprite.enabled = false;
-
         yield return new WaitForSeconds(1);
 
-        player.isShielded = false;
+        SceneManager.LoadScene("GameOver");
     }
 
     public IEnumerator shieldSprite1()
