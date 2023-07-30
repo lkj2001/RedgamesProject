@@ -35,6 +35,7 @@ public class Player : MonoBehaviour
     private PowerupManager powerUpManager;
     public bool isShielded;
     public GameObject shield;
+    public SpriteRenderer shieldS;
     //public PowerUp powerUp;
 
     public void Start()
@@ -42,6 +43,7 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         bc = GetComponent<BoxCollider2D>();
         powerUpManager = FindObjectOfType<PowerupManager>();
+        shieldS = shield.GetComponent<SpriteRenderer>();
     }
 
     public void Update()
@@ -127,10 +129,20 @@ public class Player : MonoBehaviour
 
     public void stopIceCream()
     {
-        Debug.Log("Shield Destroyed");
+        //Debug.Log("Shield Destroyed");
         powerUpManager.SetPowerUpActive(PowerType.IceCream, false);
         isShielded = false;
+        StartCoroutine(revertState());
         CancelInvoke("stopIceCream");
+    }
+
+    public IEnumerator revertState()
+    {
+        State = State.Invicible;
+
+        yield return new WaitForSeconds(1);
+
+        State = State.Normal;
     }
 
     public Vector3 GetPosition()

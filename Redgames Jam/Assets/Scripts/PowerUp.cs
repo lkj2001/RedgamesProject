@@ -59,13 +59,11 @@ public class PowerUp : MonoBehaviour
                 case PowerType.Kebab:
                     if (!powerUpManager.IsPowerUpActive(PowerType.Kebab))
                     {
-                        Debug.Log("KEBAB POWER");
                         powerUpManager.SetPowerUpActive(PowerType.Kebab, true);
                         StartCoroutine(kebab());
                     }
                     else
                     {
-                        Debug.Log("Already applied");
                         Destroy(gameObject);
                     }
                     break;
@@ -73,13 +71,11 @@ public class PowerUp : MonoBehaviour
                 case PowerType.NasiLemak:
                     if(!powerUpManager.IsPowerUpActive(PowerType.NasiLemak))
                     {
-                        Debug.Log("MALAYSIA BEST FOOD");
                         powerUpManager.SetPowerUpActive(PowerType.NasiLemak, true);
                         StartCoroutine(NasiLemak());
                     }
                     else
                     {
-                        Debug.Log("Already applied");
                         Destroy(gameObject);
                     }
                     break;
@@ -87,13 +83,11 @@ public class PowerUp : MonoBehaviour
                 case PowerType.IceCream:
                     if(!powerUpManager.IsPowerUpActive(PowerType.IceCream))
                     {
-                        Debug.Log("BING CHILLING");
                         powerUpManager.SetPowerUpActive(PowerType.IceCream, true);
                         IceCream();
                     }
                     else
                     {
-                        Debug.Log("Already applied");
                         Destroy(gameObject);
                     }
                     break;
@@ -111,8 +105,9 @@ public class PowerUp : MonoBehaviour
         s.enabled = false;
         c.enabled = false;
         yield return new WaitForSeconds(5);
-        player.State = State.Normal;
         player.speed /= 2;
+        yield return new WaitForSeconds(1);
+        player.State = State.Normal;
         powerUpManager.SetPowerUpActive(PowerType.Kebab, false);
         Destroy(gameObject);
     }
