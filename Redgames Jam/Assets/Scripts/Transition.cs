@@ -18,15 +18,15 @@ public class Transition : MonoBehaviour
             // Load the appropriate scene based on the boolean values
             if (KL)
             {
-                SceneManager.LoadScene(0); // Replace "KLScene" with the name of your Kuala Lumpur scene
+                SceneManager.LoadScene(1); // Replace "KLScene" with the name of your Kuala Lumpur scene
             }
             else if (Doha)
             {
-                SceneManager.LoadScene(1); // Replace "DohaScene" with the name of your Doha scene
+                SceneManager.LoadScene(2); // Replace "DohaScene" with the name of your Doha scene
             }
             else if (SH)
             {
-                SceneManager.LoadScene(2); // Replace "SHScene" with the name of your Shanghai scene
+                SceneManager.LoadScene(3); // Replace "SHScene" with the name of your Shanghai scene
             }
         }
     }
