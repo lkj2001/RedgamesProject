@@ -8,6 +8,8 @@ public class UI : MonoBehaviour
     public GameObject Tutorial, bg1, bg2;
     public void Retry()
     {
+        AudioManager.instance.stopMusic();
+        AudioManager.instance.playMusic("BGM");
         SceneManager.LoadScene("MainMenu");
     }
 
@@ -27,7 +29,8 @@ public class UI : MonoBehaviour
 
     public void StartGame()
     {
-        //SceneManager.LoadScene("Doha");
-        SceneManager.LoadScene("SampleScene");
+        
+        SceneManager.LoadScene("Starting");
+        //SceneManager.LoadScene("SampleScene");
     }
 }

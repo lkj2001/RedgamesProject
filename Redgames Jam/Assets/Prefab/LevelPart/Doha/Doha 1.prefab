@@ -99,9 +99,10 @@ GameObject:
   - component: {fileID: 5534754883959370218}
   - component: {fileID: 5534754883959370221}
   - component: {fileID: 5534754883959370220}
+  - component: {fileID: 7702741392594555015}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: Untagged
+  m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -183,7 +184,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.086022615, y: 0.11813784}
@@ -199,6 +200,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1720452, y: 2.5179205}
   m_EdgeRadius: 0
+--- !u!114 &7702741392594555015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5534754883959370223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08852133cc2fda498a1eb283dbc615b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
+  shield: {fileID: 0}
 --- !u!1 &5534754884147018525
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,9 +256,10 @@ GameObject:
   - component: {fileID: 5534754884575890204}
   - component: {fileID: 5534754884575890202}
   - component: {fileID: 5534754884575890205}
+  - component: {fileID: 4365998320717399210}
   m_Layer: 0
   m_Name: Square (7)
-  m_TagString: Untagged
+  m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -325,7 +341,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.007257417, y: 0.09537554}
@@ -341,6 +357,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8983977, y: 2.291657}
   m_EdgeRadius: 0
+--- !u!114 &4365998320717399210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5534754884575890207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08852133cc2fda498a1eb283dbc615b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
+  shield: {fileID: 0}
 --- !u!1 &5534754884582290759
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,9 +493,10 @@ GameObject:
   - component: {fileID: 5534754884997401576}
   - component: {fileID: 5534754884997401590}
   - component: {fileID: 5534754884997401577}
+  - component: {fileID: 1313853368613379853}
   m_Layer: 0
   m_Name: Square (6)
-  m_TagString: Untagged
+  m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -547,7 +578,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.028057039, y: 0.10337615}
@@ -563,6 +594,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2431601, y: 2.6275072}
   m_EdgeRadius: 0
+--- !u!114 &1313853368613379853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5534754884997401579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08852133cc2fda498a1eb283dbc615b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
+  shield: {fileID: 0}
 --- !u!1 &6110528433240966858
 GameObject:
   m_ObjectHideFlags: 0
@@ -1267,6 +1312,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7546890087761909110, guid: 57d0706187c5f4047bfeeca22277fbf3, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8260134760898096512, guid: 57d0706187c5f4047bfeeca22277fbf3, type: 3}
       propertyPath: m_Name
       value: Bird
@@ -1886,6 +1935,10 @@ PrefabInstance:
     - target: {fileID: 4662629845326093062, guid: 57d0706187c5f4047bfeeca22277fbf3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546890087761909110, guid: 57d0706187c5f4047bfeeca22277fbf3, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8260134760898096512, guid: 57d0706187c5f4047bfeeca22277fbf3, type: 3}
       propertyPath: m_Name

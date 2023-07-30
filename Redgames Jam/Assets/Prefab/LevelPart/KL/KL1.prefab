@@ -62,9 +62,10 @@ GameObject:
   - component: {fileID: 8935333937949667403}
   - component: {fileID: 8935333937949667404}
   - component: {fileID: 8935333937949667405}
+  - component: {fileID: 8141516803901039115}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: Untagged
+  m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,7 +147,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0082086325, y: -0.0083220005}
@@ -162,6 +163,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2462618, y: 2.5479102}
   m_EdgeRadius: 0
+--- !u!114 &8141516803901039115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8935333937949667406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08852133cc2fda498a1eb283dbc615b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
+  shield: {fileID: 0}
 --- !u!1 &8935333938186335977
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,9 +231,10 @@ GameObject:
   - component: {fileID: 8935333938246918561}
   - component: {fileID: 8935333938246918562}
   - component: {fileID: 8935333938246918563}
+  - component: {fileID: 6818026355050379898}
   m_Layer: 0
   m_Name: Square (3)
-  m_TagString: Untagged
+  m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -300,7 +316,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.0032827258}
@@ -316,6 +332,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2.7004647}
   m_EdgeRadius: 0
+--- !u!114 &6818026355050379898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8935333938246918564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08852133cc2fda498a1eb283dbc615b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
+  shield: {fileID: 0}
 --- !u!1 &8935333938277278473
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,9 +357,10 @@ GameObject:
   - component: {fileID: 8935333938277278486}
   - component: {fileID: 8935333938277278487}
   - component: {fileID: 8935333938277278472}
+  - component: {fileID: 5467123033399499339}
   m_Layer: 0
   m_Name: Square (2)
-  m_TagString: Untagged
+  m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -411,7 +442,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.0005286336}
@@ -427,6 +458,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2.713735}
   m_EdgeRadius: 0
+--- !u!114 &5467123033399499339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8935333938277278473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08852133cc2fda498a1eb283dbc615b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
+  shield: {fileID: 0}
 --- !u!1 &8935333938353371619
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,9 +483,10 @@ GameObject:
   - component: {fileID: 8935333938353371618}
   - component: {fileID: 8935333938353371616}
   - component: {fileID: 8935333938353371617}
+  - component: {fileID: 8212411714644555806}
   m_Layer: 0
   m_Name: Square (5)
-  m_TagString: Untagged
+  m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -522,7 +568,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.29129085}
@@ -538,6 +584,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.9928503}
   m_EdgeRadius: 0
+--- !u!114 &8212411714644555806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8935333938353371619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08852133cc2fda498a1eb283dbc615b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
+  shield: {fileID: 0}
 --- !u!1 &8935333938429395361
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,9 +609,10 @@ GameObject:
   - component: {fileID: 8935333938429395374}
   - component: {fileID: 8935333938429395375}
   - component: {fileID: 8935333938429395360}
+  - component: {fileID: 76604329569387792}
   m_Layer: 0
   m_Name: Square (4)
-  m_TagString: Untagged
+  m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -633,7 +694,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.018996894}
@@ -649,6 +710,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2.6735106}
   m_EdgeRadius: 0
+--- !u!114 &76604329569387792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8935333938429395361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08852133cc2fda498a1eb283dbc615b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
+  shield: {fileID: 0}
 --- !u!1 &8935333938599807678
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,9 +735,10 @@ GameObject:
   - component: {fileID: 8935333938599807677}
   - component: {fileID: 8935333938599807675}
   - component: {fileID: 8935333938599807676}
+  - component: {fileID: 8873508461951957596}
   m_Layer: 0
   m_Name: Square (7)
-  m_TagString: Untagged
+  m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -744,7 +820,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.15497097}
@@ -760,6 +836,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2.1920831}
   m_EdgeRadius: 0
+--- !u!114 &8873508461951957596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8935333938599807678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08852133cc2fda498a1eb283dbc615b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
+  shield: {fileID: 0}
 --- !u!1 &8935333938601686246
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,9 +1003,10 @@ GameObject:
   - component: {fileID: 8935333938764081698}
   - component: {fileID: 8935333938764081696}
   - component: {fileID: 8935333938764081697}
+  - component: {fileID: 3858665968961379220}
   m_Layer: 0
   m_Name: Square (8)
-  m_TagString: Untagged
+  m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -997,7 +1088,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.1827861}
@@ -1013,6 +1104,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2.4463947}
   m_EdgeRadius: 0
+--- !u!114 &3858665968961379220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8935333938764081699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08852133cc2fda498a1eb283dbc615b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
+  shield: {fileID: 0}
 --- !u!1 &8935333938983471690
 GameObject:
   m_ObjectHideFlags: 0
@@ -1024,9 +1129,10 @@ GameObject:
   - component: {fileID: 8935333938983471689}
   - component: {fileID: 8935333938983471703}
   - component: {fileID: 8935333938983471688}
+  - component: {fileID: 8686566059528552138}
   m_Layer: 0
   m_Name: Square (6)
-  m_TagString: Untagged
+  m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1108,7 +1214,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.006455958}
@@ -1124,6 +1230,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2.9421043}
   m_EdgeRadius: 0
+--- !u!114 &8686566059528552138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8935333938983471690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08852133cc2fda498a1eb283dbc615b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
+  shield: {fileID: 0}
 --- !u!1 &8935333939321348428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1135,9 +1255,10 @@ GameObject:
   - component: {fileID: 8935333939321348427}
   - component: {fileID: 8935333939321348425}
   - component: {fileID: 8935333939321348426}
+  - component: {fileID: 7018234778428195442}
   m_Layer: 0
   m_Name: Square (9)
-  m_TagString: Untagged
+  m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1219,7 +1340,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.27815285}
@@ -1235,6 +1356,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.8741946}
   m_EdgeRadius: 0
+--- !u!114 &7018234778428195442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8935333939321348428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08852133cc2fda498a1eb283dbc615b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
+  shield: {fileID: 0}
 --- !u!1001 &295274144910416525
 PrefabInstance:
   m_ObjectHideFlags: 0

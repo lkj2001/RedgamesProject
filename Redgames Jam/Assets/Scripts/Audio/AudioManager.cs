@@ -48,6 +48,14 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void stopMusic()
+    {
+        if (audioSource.isPlaying)
+        {
+            audioSource.Stop();
+        }
+    }
+
     public void musicVolume(float volume)
     {
         audioSource.volume = volume;
