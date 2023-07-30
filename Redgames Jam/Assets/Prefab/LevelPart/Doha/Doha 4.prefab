@@ -274,6 +274,7 @@ GameObject:
   - component: {fileID: 8816969741926298584}
   - component: {fileID: 8816969741926298586}
   - component: {fileID: 8816969741926298587}
+  - component: {fileID: 5676043524669608826}
   m_Layer: 0
   m_Name: Square (18)
   m_TagString: Obstacles
@@ -374,6 +375,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.5186353, y: 0.7325196}
   m_EdgeRadius: 0
+--- !u!114 &5676043524669608826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816969741926298585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08852133cc2fda498a1eb283dbc615b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
+  shield: {fileID: 2134678290406167980, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
 --- !u!1 &8816969741933752409
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,6 +400,7 @@ GameObject:
   - component: {fileID: 8816969741933752408}
   - component: {fileID: 8816969741933752410}
   - component: {fileID: 8816969741933752411}
+  - component: {fileID: 2138795037150244140}
   m_Layer: 0
   m_Name: Square (16)
   m_TagString: Obstacles
@@ -485,6 +501,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.4866633, y: 0.8439698}
   m_EdgeRadius: 0
+--- !u!114 &2138795037150244140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816969741933752409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08852133cc2fda498a1eb283dbc615b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
+  shield: {fileID: 2134678290406167980, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
 --- !u!1 &8816969742074389424
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,6 +526,7 @@ GameObject:
   - component: {fileID: 8816969742074389427}
   - component: {fileID: 8816969742074389429}
   - component: {fileID: 8816969742074389426}
+  - component: {fileID: 5130323392801199918}
   m_Layer: 0
   m_Name: Square (20)
   m_TagString: Obstacles
@@ -596,6 +627,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.4866633, y: 0.5987793}
   m_EdgeRadius: 0
+--- !u!114 &5130323392801199918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816969742074389424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08852133cc2fda498a1eb283dbc615b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
+  shield: {fileID: 2134678290406167980, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
 --- !u!1 &8816969742265804003
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,6 +652,7 @@ GameObject:
   - component: {fileID: 8816969742265804002}
   - component: {fileID: 8816969742265804004}
   - component: {fileID: 8816969742265804005}
+  - component: {fileID: 7174097107353264157}
   m_Layer: 0
   m_Name: Square (13)
   m_TagString: Obstacles
@@ -707,6 +753,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.460462, y: 0.7034286}
   m_EdgeRadius: 0
+--- !u!114 &7174097107353264157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816969742265804003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08852133cc2fda498a1eb283dbc615b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
+  shield: {fileID: 2134678290406167980, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
 --- !u!1 &8816969742598042073
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,6 +778,7 @@ GameObject:
   - component: {fileID: 8816969742598042072}
   - component: {fileID: 8816969742598042074}
   - component: {fileID: 8816969742598042075}
+  - component: {fileID: 5879126089983613226}
   m_Layer: 0
   m_Name: Square (17)
   m_TagString: Obstacles
@@ -818,6 +879,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.4387066, y: 0.7770997}
   m_EdgeRadius: 0
+--- !u!114 &5879126089983613226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816969742598042073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08852133cc2fda498a1eb283dbc615b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
+  shield: {fileID: 2134678290406167980, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
 --- !u!1 &8816969743448440830
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,6 +904,7 @@ GameObject:
   - component: {fileID: 8816969743448440769}
   - component: {fileID: 8816969743448440771}
   - component: {fileID: 8816969743448440768}
+  - component: {fileID: 5340977660979206802}
   m_Layer: 0
   m_Name: Square (14)
   m_TagString: Obstacles
@@ -929,6 +1005,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.4644365, y: 0.75134826}
   m_EdgeRadius: 0
+--- !u!114 &5340977660979206802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816969743448440830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08852133cc2fda498a1eb283dbc615b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
+  shield: {fileID: 2134678290406167980, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
 --- !u!1 &8816969743453013506
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,6 +1030,7 @@ GameObject:
   - component: {fileID: 8816969743453013509}
   - component: {fileID: 8816969743453013511}
   - component: {fileID: 8816969743453013508}
+  - component: {fileID: 2753739712170549064}
   m_Layer: 0
   m_Name: Square (19)
   m_TagString: Obstacles
@@ -1040,6 +1131,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.510642, y: 0.6879393}
   m_EdgeRadius: 0
+--- !u!114 &2753739712170549064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816969743453013506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08852133cc2fda498a1eb283dbc615b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
+  shield: {fileID: 2134678290406167980, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
 --- !u!1 &8816969743485958313
 GameObject:
   m_ObjectHideFlags: 0
@@ -1051,6 +1156,7 @@ GameObject:
   - component: {fileID: 8816969743485958312}
   - component: {fileID: 8816969743485958314}
   - component: {fileID: 8816969743485958315}
+  - component: {fileID: 1476095838298754498}
   m_Layer: 0
   m_Name: Square (15)
   m_TagString: Obstacles
@@ -1151,6 +1257,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.4546926, y: 0.7325196}
   m_EdgeRadius: 0
+--- !u!114 &1476095838298754498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816969743485958313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08852133cc2fda498a1eb283dbc615b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2134678290406167983, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
+  shield: {fileID: 2134678290406167980, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
 --- !u!1001 &62031760828701582
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1158,6 +1278,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5465624869273311919}
     m_Modifications:
+    - target: {fileID: -7246604866490257605, guid: df6609b4ee8adad4f99e424e98632d12, type: 3}
+      propertyPath: shield
+      value: 
+      objectReference: {fileID: 2134678290406167980, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
     - target: {fileID: 4817349452200502024, guid: df6609b4ee8adad4f99e424e98632d12, type: 3}
       propertyPath: m_Name
       value: Camel (2)
@@ -1666,6 +1790,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5465624869273311919}
     m_Modifications:
+    - target: {fileID: -7246604866490257605, guid: df6609b4ee8adad4f99e424e98632d12, type: 3}
+      propertyPath: shield
+      value: 
+      objectReference: {fileID: 2134678290406167980, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
     - target: {fileID: 4817349452200502024, guid: df6609b4ee8adad4f99e424e98632d12, type: 3}
       propertyPath: m_Name
       value: Camel
@@ -1980,6 +2108,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5465624869273311919}
     m_Modifications:
+    - target: {fileID: -7246604866490257605, guid: df6609b4ee8adad4f99e424e98632d12, type: 3}
+      propertyPath: shield
+      value: 
+      objectReference: {fileID: 2134678290406167980, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
     - target: {fileID: 4817349452200502024, guid: df6609b4ee8adad4f99e424e98632d12, type: 3}
       propertyPath: m_Name
       value: Camel (3)
@@ -2108,6 +2240,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5465624869273311919}
     m_Modifications:
+    - target: {fileID: -7246604866490257605, guid: df6609b4ee8adad4f99e424e98632d12, type: 3}
+      propertyPath: shield
+      value: 
+      objectReference: {fileID: 2134678290406167980, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
     - target: {fileID: 4817349452200502024, guid: df6609b4ee8adad4f99e424e98632d12, type: 3}
       propertyPath: m_Name
       value: Camel (5)
@@ -3228,6 +3364,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5465624869273311919}
     m_Modifications:
+    - target: {fileID: -7246604866490257605, guid: df6609b4ee8adad4f99e424e98632d12, type: 3}
+      propertyPath: shield
+      value: 
+      objectReference: {fileID: 2134678290406167980, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
     - target: {fileID: 4817349452200502024, guid: df6609b4ee8adad4f99e424e98632d12, type: 3}
       propertyPath: m_Name
       value: Camel (9)
@@ -3294,6 +3434,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5465624869273311919}
     m_Modifications:
+    - target: {fileID: -7246604866490257605, guid: df6609b4ee8adad4f99e424e98632d12, type: 3}
+      propertyPath: shield
+      value: 
+      objectReference: {fileID: 2134678290406167980, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
     - target: {fileID: 4817349452200502024, guid: df6609b4ee8adad4f99e424e98632d12, type: 3}
       propertyPath: m_Name
       value: Camel (1)
@@ -3422,6 +3566,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5465624869273311919}
     m_Modifications:
+    - target: {fileID: -7246604866490257605, guid: df6609b4ee8adad4f99e424e98632d12, type: 3}
+      propertyPath: shield
+      value: 
+      objectReference: {fileID: 2134678290406167980, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
     - target: {fileID: 4817349452200502024, guid: df6609b4ee8adad4f99e424e98632d12, type: 3}
       propertyPath: m_Name
       value: Camel (4)
