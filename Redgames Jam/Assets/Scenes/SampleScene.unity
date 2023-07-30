@@ -428,7 +428,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.99, y: 0.45, z: -10}
+  m_LocalPosition: {x: -8.99, y: 8.97, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -662,7 +662,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 0.05
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -1413,7 +1413,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 7
+      scalar: 0
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -1466,7 +1466,7 @@ ParticleSystem:
     rateOverDistance:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 1
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -5790,7 +5790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1561032899478309530, guid: 70d1bc5a9d42abb4da70b85de93037ee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.45
+      value: 8.97
       objectReference: {fileID: 0}
     - target: {fileID: 1561032899478309530, guid: 70d1bc5a9d42abb4da70b85de93037ee, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5900,7 +5900,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2134678290406167977, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.45
+      value: 8.97
       objectReference: {fileID: 0}
     - target: {fileID: 2134678290406167977, guid: 7fa52d154b957b246a000c5f8df9a261, type: 3}
       propertyPath: m_LocalPosition.z
