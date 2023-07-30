@@ -38,6 +38,7 @@ Transform:
   - {fileID: 1780804877859015810}
   - {fileID: 5215363370545995927}
   - {fileID: 7286838995020676475}
+  - {fileID: 7373192963949588790}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -196,7 +197,7 @@ GameObject:
   - component: {fileID: 1780804877958742746}
   m_Layer: 8
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1702,6 +1703,68 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4662629845326093062, guid: 57d0706187c5f4047bfeeca22277fbf3, type: 3}
   m_PrefabInstance: {fileID: 2567298197883866585}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2759861953597048932
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1780804877300875473}
+    m_Modifications:
+    - target: {fileID: 4620174508473153872, guid: 4a8ce796348c5e34b8cc0221b40ab947, type: 3}
+      propertyPath: m_Name
+      value: Nasi Lemak
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620174508473153874, guid: 4a8ce796348c5e34b8cc0221b40ab947, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620174508473153874, guid: 4a8ce796348c5e34b8cc0221b40ab947, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620174508473153874, guid: 4a8ce796348c5e34b8cc0221b40ab947, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.50500774
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620174508473153874, guid: 4a8ce796348c5e34b8cc0221b40ab947, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620174508473153874, guid: 4a8ce796348c5e34b8cc0221b40ab947, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620174508473153874, guid: 4a8ce796348c5e34b8cc0221b40ab947, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620174508473153874, guid: 4a8ce796348c5e34b8cc0221b40ab947, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620174508473153874, guid: 4a8ce796348c5e34b8cc0221b40ab947, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620174508473153874, guid: 4a8ce796348c5e34b8cc0221b40ab947, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620174508473153874, guid: 4a8ce796348c5e34b8cc0221b40ab947, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620174508473153874, guid: 4a8ce796348c5e34b8cc0221b40ab947, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4a8ce796348c5e34b8cc0221b40ab947, type: 3}
+--- !u!4 &7373192963949588790 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4620174508473153874, guid: 4a8ce796348c5e34b8cc0221b40ab947, type: 3}
+  m_PrefabInstance: {fileID: 2759861953597048932}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2902427274826608688
 PrefabInstance:
