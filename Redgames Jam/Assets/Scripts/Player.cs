@@ -35,7 +35,8 @@ public class Player : MonoBehaviour
     private PowerupManager powerUpManager;
     public bool isShielded;
     public GameObject shield;
-    public SpriteRenderer shieldS;
+    private SpriteRenderer shieldS;
+    public GameObject particle;
     //public PowerUp powerUp;
 
     public void Start()
@@ -86,12 +87,14 @@ public class Player : MonoBehaviour
         {
             rb.AddForce(new Vector2(propel, jumpForce * (rb.mass * Upforce)), ForceMode2D.Force);
             targetRotation = Quaternion.Euler(0f, 0f, rotation);
+            particle.SetActive(true);
         }
         else if (!isJumping && !isGrounded)
         {
             
             rb.AddForce(new Vector2(0f, -jumpForce * gravityMultiplier * (rb.mass * Downforce)), ForceMode2D.Force);
             targetRotation = Quaternion.identity;
+            particle.SetActive(false);
         }
 
         transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed * Time.fixedDeltaTime);
