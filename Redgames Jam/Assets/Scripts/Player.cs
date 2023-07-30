@@ -37,6 +37,7 @@ public class Player : MonoBehaviour
     public GameObject shield;
     private SpriteRenderer shieldS;
     public GameObject particle;
+    public GameObject fire;
     //public PowerUp powerUp;
 
     public void Start()
@@ -51,11 +52,16 @@ public class Player : MonoBehaviour
     {
         if(State == State.Invicible)
         {
-            bc.isTrigger = true;
+            //bc.isTrigger = true;
+            gameObject.tag = "Untagged";
+            fire.SetActive(true);
+
         }
         else if(State == State.Normal) 
         {
-            bc.isTrigger = false;
+            //bc.isTrigger = false;
+            gameObject.tag = "Player";
+            fire.SetActive(false);
         }
 
         if(isShielded)
@@ -83,7 +89,7 @@ public class Player : MonoBehaviour
             EndJump();
         }
 
-        if (isJumping && !isGrounded)
+        if (isJumping/* && !isGrounded*/)
         {
             rb.AddForce(new Vector2(propel, jumpForce * (rb.mass * Upforce)), ForceMode2D.Force);
             targetRotation = Quaternion.Euler(0f, 0f, rotation);

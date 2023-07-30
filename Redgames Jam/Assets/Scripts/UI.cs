@@ -27,6 +27,7 @@ public class UI : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Doha");
+        //SceneManager.LoadScene("Doha");
+        SceneManager.LoadScene("SampleScene");
     }
 }

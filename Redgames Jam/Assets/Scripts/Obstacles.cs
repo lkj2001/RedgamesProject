@@ -34,6 +34,10 @@ public class Obstacles : MonoBehaviour
             }
 
         }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     public IEnumerator Enemysprite()
