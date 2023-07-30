@@ -169,11 +169,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelPart_Start: {fileID: 841975723}
   levelPartList:
-  - {fileID: 8935333938186335976, guid: f3331dc9a646a124b9760e5e1c481a0b, type: 3}
-  - {fileID: 1679753806602859017, guid: 303a06b54a15b5b4eb1b7ef9f0b70fa4, type: 3}
-  - {fileID: 2704668432922106404, guid: 5cb66a68a8111204dbb400a6cffd5959, type: 3}
-  - {fileID: 1780804877300875473, guid: 69b6d4b65a2fc964e940b7bfd592aa25, type: 3}
-  - {fileID: 573401626599784895, guid: 5d29e4b7d3b73bd4cb8922bf896ae341, type: 3}
+  - {fileID: 8747542777245542555, guid: debf3598423aa314284839b0c3c0dc4b, type: 3}
+  - {fileID: 1149377860559370168, guid: 3c1aad589c82412468a6d8e96ea2a7f9, type: 3}
+  - {fileID: 7805777375737487328, guid: 53c27f3fce6a7504ba2f43d6943a6d0e, type: 3}
+  - {fileID: 3683921175309536068, guid: 04e3a2f0a029dae4d940a2890022c6c1, type: 3}
+  - {fileID: 4318023400172586659, guid: cfcc50d9ae725e64d968e2bb931b628c, type: 3}
   player: {fileID: 744616768}
   transitionTileset: {fileID: 8677735362630538834, guid: edb709132dd88ee45a6b7fe63a8194d2, type: 3}
 --- !u!114 &744616768 stripped

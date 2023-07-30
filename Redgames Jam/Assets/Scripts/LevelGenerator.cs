@@ -9,9 +9,12 @@ public class LevelGenerator : MonoBehaviour
     [SerializeField] private Transform levelPart_Start;
     [SerializeField] private List <Transform> levelPartList;
     [SerializeField] private Player player;
+    [SerializeField] private Transform transitionTileset;
 
     private Vector3 lastEndPosition;
 
+    private IEnumerator tilesetSwitchCoroutine;
+    private bool continueSpawning = true;
     private void Awake()
     {
         lastEndPosition = levelPart_Start.Find("EndPosition").position;
@@ -22,6 +25,9 @@ public class LevelGenerator : MonoBehaviour
         {
             SpawnLevelParts();
         }
+
+        //tilesetSwitchCoroutine = SwitchToTransitionTileset();
+        StartCoroutine(SwitchToTransitionTileset());
     }
     void Start()
     {
@@ -31,7 +37,7 @@ public class LevelGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(player.GetPosition(), lastEndPosition) < PLAYER_DISTANCE_SPAWN_LEVEL_PART)
+        if (continueSpawning && Vector3.Distance(player.GetPosition(), lastEndPosition) < PLAYER_DISTANCE_SPAWN_LEVEL_PART)
         {
             SpawnLevelParts();
         }
@@ -49,5 +55,26 @@ public class LevelGenerator : MonoBehaviour
     {
         Transform levelPartTransform = Instantiate(levelPart, spawnPosition, Quaternion.identity);
         return levelPartTransform;
+    }
+
+    private void SpawnTransitionTileset()
+    {
+        // Spawn the "Transition" tileset using the transitionTileset variable
+        // You can modify this part based on how the "Transition" tileset should be spawned
+        // For example, you can instantiate a specific set of tiles, etc.
+        Transform lastLevelPartTransform = SpawnLevelPart(transitionTileset, lastEndPosition);
+        lastEndPosition = lastLevelPartTransform.Find("EndPosition").position;
+        Debug.Log("Spawned Transition tileset at: " + lastLevelPartTransform.position);
+    }
+    private IEnumerator SwitchToTransitionTileset()
+    {
+        // Wait for one minute
+        yield return new WaitForSeconds(60f);
+
+        // Call the function to spawn the "Transition" tileset
+        SpawnTransitionTileset();
+
+        // Stop tileset spawning
+        continueSpawning = false;
     }
 }
