@@ -29,6 +29,7 @@ public class IceCreamPower : MonoBehaviour
             switch (PowerType)
             {
                 case PowerType.IceCream:
+                    AudioManager.instance.playSFX("Shield");
                     if (!powerUpManager.IsPowerUpActive(PowerType.IceCream))
                     {
                         powerUpManager.SetPowerUpActive(PowerType.IceCream, true);

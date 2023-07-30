@@ -28,6 +28,8 @@ public class Kebab : MonoBehaviour
             switch (PowerType)
             {
                 case PowerType.Kebab:
+
+                    AudioManager.instance.playSFX("Kebab");
                     if (!powerUpManager.IsPowerUpActive(PowerType.Kebab))
                     {
                         powerUpManager.SetPowerUpActive(PowerType.Kebab, true);

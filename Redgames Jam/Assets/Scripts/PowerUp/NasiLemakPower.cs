@@ -28,6 +28,7 @@ public class NasiLemakPower : MonoBehaviour
             switch (PowerType)
             {
                 case PowerType.NasiLemak:
+                    AudioManager.instance.playSFX("NasiLemak");
                     if (!powerUpManager.IsPowerUpActive(PowerType.NasiLemak))
                     {
                         powerUpManager.SetPowerUpActive(PowerType.NasiLemak, true);

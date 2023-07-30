@@ -24,6 +24,7 @@ public class Coins : MonoBehaviour
                 CoinManager.Instance.highScore = CoinManager.Instance.currentScore;
             }
 
+            AudioManager.instance.playSFX("Coin");
             Destroy(gameObject);
         }
     }
